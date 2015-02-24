@@ -1,13 +1,20 @@
 package com.varasofttech.pojo;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
+	private static final long serialVersionUID = 6281099766897902592L;
 	
 	private long id;
     private String firstName;
     private String lastName;
     private int age;
     
-    // Constructors and Getter/Setter methods, 
+    public Person() {
+		super();
+	}
+    
+	// Getter & Setter methods
     public long getId() {
    	 return id;
     }
@@ -32,10 +39,10 @@ public class Person {
     public void setAge(int age) {
    	 this.age = age;
     }
+    
 	@Override
 	public String toString() {
 		return "Person [id=" + id + ", firstName=" + firstName + ", lastName="
 				+ lastName + ", age=" + age + "]";
 	}   	 
-
 }

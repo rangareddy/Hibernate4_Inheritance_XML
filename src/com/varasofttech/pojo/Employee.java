@@ -1,8 +1,14 @@
 package com.varasofttech.pojo;
 
 public class Employee extends Person {
+	private static final long serialVersionUID = -5050456251835366554L;
 	private String designation;
     private Double salary;
+    
+    public Employee() {
+    	super();
+    }
+    
 	public String getDesignation() {
 		return designation;
 	}
@@ -21,5 +27,4 @@ public class Employee extends Person {
 		return "Employee [designation=" + designation + ", salary=" + salary
 				+ "]";
 	}
-
 }
