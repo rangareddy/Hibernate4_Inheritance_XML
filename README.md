@@ -1,2 +1,2 @@
-# Hibernate4_Inheritence_XML
-This application demonstrates the how to use or implement Inheritence concept in Hibernate
+# Hibernate4_Inheritance_XML
+This application demonstrates the how to use or implement Inheritance concept in Hibernate
